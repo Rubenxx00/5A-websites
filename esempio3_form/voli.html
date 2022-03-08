@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Voli</title>
+</head>
+<body>
+    <h1>Trova un volo</h1>
+    <form action="https://www.w3schools.com/action_page.php" method="post">
+        <input type="radio" id="A" name="ar" value="andata">
+        <label for="A">Andata</label>
+        <input type="radio" id="AR" name="ar" value="andataritorno">
+        <label for="AR">Andata e ritorno</label> <br>
+
+        <label for="andata">Andata:</label>
+        <input type="date" id="andata" name="giorno_andata"> 
+        <input type="time" name="ora_andata"><br>
+        <br>
+
+        <label for="ritorno">Ritorno:</label>
+        <input type="date" id="ritorno"> 
+        <input type="time"><br>
+        <br>
+
+        <label for="adulti">Adulti</label>
+        <input type="number" id="adulti" min="0" max="10" >
+        
+        <label for="bambini">Bambini</label>
+        <input type="number" id="bambini" min="0" max="10" ><br>
+        <br>
+
+        <input type="radio" id="diretto" name="ds" value="Diretto">
+        <label for="diretto">Solo diretti</label>
+        <input type="radio" id="scalo" name="ds" value="Scalo">
+        <label for="scalo">Diretti + scali</label> <br>
+
+        <hr>
+        <p>Preferenze compagnia:</p>
+        <input type="checkbox" id="Co1" name="Co1" value="Air Italy">
+        <label for="Co1">Air Italy</label> <br>
+        <input type="checkbox" id="Co2" name="Co2" value="Altre">
+        <label for="Co1">Altre</label> <br>
+        <br>
+
+        <label for="area_commenti">Eventuali note:</label> <br>
+        <textarea id="area_commenti" name="commenti" rows="8" cols="50"></textarea> <br>
+
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="fiat">Fiat</option>
+          <option value="audi">Audi</option>
+          <option value="altro">Altro</option>
+        </select>
+
+        <input type="reset" value="Cancella i campi">
+        <input type="submit" value="Invia il modulo">
+    </form>    
+</body>
+</html>
