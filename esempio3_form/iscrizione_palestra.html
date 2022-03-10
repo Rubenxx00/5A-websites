@@ -1,0 +1,62 @@
+<!-- Form iscrizione palestra -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form iscrizione</title>
+</head>
+<body>
+    <form action="https://www.w3schools.com/action_page.php" method="get">
+        <table border="solid">
+            <tr>
+                <th>Nome</th>
+                <th>Cognome</th>
+            </tr>
+            <tr>
+                <td>Nome</td>
+                <td>
+                    <input type="text" name="nome">
+                </td>
+            </tr>
+            <tr>
+                <td>Sesso</td>
+                <td>
+                    <label for="m">Maschio</label>
+                    <input id="m" type="radio" name="sesso" value="m"> <br>
+                    
+                    <label for="f">Femmina</label>
+                    <input id="f" type="radio" name="sesso" value="f"> <br>
+                </td>
+            </tr>
+            <tr>
+                <td>Colore occhi</td>
+                <td>
+                    <select name="colore">
+                        <option value="verdi">Verdi</option>
+                        <option value="castani">Castani</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Caratteristiche fisiche</td>
+                <td>
+                    <label for="alto">Alto più di...</label>
+                    <input id="alto" type="checkbox" name="alto" value="alto"> <br>
+                    <label for="pesante">Pesa più di...</label>
+                    <input id="pesante" type="checkbox" name="pesante" value="pesante"> <br>
+                </td>   
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="capacità">Descrivere le capacità</label> <br>
+                    <textarea id="capacità" name="capacità"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Invia">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
