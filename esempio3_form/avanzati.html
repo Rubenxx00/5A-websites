@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://www.w3schools.com/action_page.php" method="post">
+        <label for="voto">Voto: </label>
+        <input type="range" id="voto" name="voto" min="0" max="100" step="5"> <br>
+        <br>
+
+        <label for="tel">Numero di telefono:</label>
+        <input type="tel" id="tel" name="tel"> <br>
+        <!-- Da mobile apre il tastierino numerico al posto della tastiera QWERTY  -->
+        <br>
+
+        <label for="col">Scegli un colore</label>
+        <input type="color" id="col" name="col"><br>
+        <br>
+
+        <label for="url">Link a sito</label>
+        <input type="url" id="url" name="url" placeholder="inserisci sito...."><br>
+        <br>
+        <!-- esegue anche un controllo di validità -->
+
+        <textarea placeholder="Inserisci testo qui..."></textarea> <br>
+        <!-- NB: non specificando l'attributo name il testo non viene inviato al server -->
+        
+        <label for="attachment">Allega un file</label>
+        <input type="file" id="attachment" name="attachment"> <br>
+        <br>
+
+        <input type="submit" value="Invia">
+    </form>
+</body>
+</html>
